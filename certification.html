@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080c10" />
+    <meta name="description" content="Explore Nishad's mechanical engineering and aerospace certifications." />
+    <meta property="og:title" content="NISHAD'S PORTFOLIO" />
+    <meta property="og:description" content="A visual collection of Nishad's engineering certificates." />
+    <title>NISHAD'S PORTFOLIO</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="certification.js" defer></script>
+  </head>
+  <body>
+    <div class="site-loader" role="status" aria-label="Loading portfolio">
+      <div class="site-loader-mark"><span aria-hidden="true"></span><img src="assets/brand-mark.svg" alt="" /></div>
+      <span class="site-loader-label">NISHAD'S PORTFOLIO</span>
+    </div>    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="starfield" aria-hidden="true"></div>
+    <div class="background-icons" aria-hidden="true">
+      <img class="engineering-icon icon-airplane" src="assets/icons/aeroplane.svg" alt="" />
+      <img class="engineering-icon icon-design" src="assets/icons/design-thinking.svg" alt="" />
+      <img class="engineering-icon icon-engineering" src="assets/icons/engineering.svg" alt="" />
+      <img class="engineering-icon icon-robot" src="assets/icons/industrial-robot.svg" alt="" />
+      <img class="engineering-icon icon-laser" src="assets/icons/laser.svg" alt="" />
+      <img class="engineering-icon icon-machinery" src="assets/icons/machinery.svg" alt="" />
+      <img class="engineering-icon icon-milling" src="assets/icons/milling-machine.svg" alt="" />
+      <img class="engineering-icon icon-rocket" src="assets/icons/rocket.svg" alt="" />
+      <img class="engineering-icon icon-turbine" src="assets/icons/turbine.svg" alt="" />
+      <img class="engineering-icon icon-wind" src="assets/icons/wind-power.svg" alt="" />
+      <img class="engineering-icon icon-wrench" src="assets/icons/wrench.svg" alt="" />
+    </div>
+    <nav class="orbit-nav" aria-label="Portfolio sections">
+      <div class="orbit-links" id="orbit-links">
+        <a class="orbit-link" href="index.html" aria-label="Home" style="--nav-x:0px;--nav-y:0px"><img src="assets/nav-icons/home.png" alt="" /><span>Home</span></a>
+        <div class="orbit-about-group">
+          <a class="orbit-link orbit-about" href="about.html" aria-label="About me"><img src="assets/nav-icons/about-me.png" alt="" /><span>About me</span></a>
+          <a class="journey-sub-link" href="journey.html"><img src="assets/nav-icons/journey.png" alt="" /><span>My Journey</span></a>
+        </div>
+        <a class="orbit-link" href="projects.html" aria-label="Projects" style="--nav-x:113px;--nav-y:65px"><img src="assets/nav-icons/project.png" alt="" /><span>Projects</span></a>
+        <a class="orbit-link" href="certification.html" aria-label="Certification" style="--nav-x:65px;--nav-y:113px"><img src="assets/nav-icons/certificate.png" alt="" /><span>Certification</span></a>
+        <a class="orbit-link" href="achievements.html" aria-label="Achievements" style="--nav-x:0px;--nav-y:130px"><img src="assets/nav-icons/achievements.png" alt="" /><span>Achievements</span></a>
+      </div>
+    </nav>
+    <main id="main" class="certification-page">
+      <section class="certification-gallery" id="top" aria-labelledby="certification-title">
+        <div class="certification-heading">
+          <div class="section-kicker"><span>04</span><span>LEARNING &amp; PRACTICE</span></div>
+          <h1 id="certification-title">Certifications</h1>
+          <p>A record of the skills and knowledge I’ve built along the way.</p>
+        </div>
+        <div class="cert-carousel" data-cert-carousel>
+          <button class="cert-carousel-arrow" type="button" aria-label="Previous certificate" data-cert-previous>←</button>
+          <div class="cert-track" data-cert-track tabindex="0" aria-label="Certificates. Scroll horizontally to explore."></div>
+          <button class="cert-carousel-arrow" type="button" aria-label="Next certificate" data-cert-next>→</button>
+        </div>
+        <p class="cert-carousel-hint" data-cert-status>Loading certificates…</p>
+      </section>
+    </main>
+
+    <dialog class="cert-viewer" data-cert-viewer aria-label="Certificate viewer">
+      <header class="cert-viewer-header">
+        <div><span class="cert-viewer-count" data-viewer-count></span><h2 data-viewer-title>Certificate</h2></div>
+        <button class="cert-viewer-close" type="button" aria-label="Close certificate">×</button>
+      </header>
+      <div class="cert-viewer-stage">
+        <button class="cert-viewer-arrow cert-viewer-previous" type="button" aria-label="Previous certificate" data-viewer-previous>←</button>
+        <img class="cert-viewer-image" data-viewer-image alt="" hidden />
+        <iframe class="cert-viewer-pdf" data-viewer-pdf title="Certificate PDF" hidden></iframe>
+        <button class="cert-viewer-arrow cert-viewer-next" type="button" aria-label="Next certificate" data-viewer-next>→</button>
+      </div>
+    </dialog>
+
+    <footer class="site-footer"><span>© 2026 NISHAD</span><span>DESIGNED WITH CURIOSITY <span class="footer-star">✳</span></span><a href="#top">BACK TO TOP ↑</a></footer>
+  </body>
+</html>
+
+

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080c10" />
+    <meta name="description" content="Explore Nishad's aerospace engineering competition achievements and UAV design milestones." />
+    <meta property="og:title" content="NISHAD'S PORTFOLIO" />
+    <meta property="og:description" content="A visual record of Nishad's aerospace engineering competition achievements." />
+    <title>NISHAD'S PORTFOLIO</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="achievements.js" defer></script>
+  </head>
+  <body>
+    <div class="site-loader" role="status" aria-label="Loading portfolio">
+      <div class="site-loader-mark"><span aria-hidden="true"></span><img src="assets/brand-mark.svg" alt="" /></div>
+      <span class="site-loader-label">NISHAD'S PORTFOLIO</span>
+    </div>    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="starfield" aria-hidden="true"></div>
+    <div class="background-icons" aria-hidden="true">
+      <img class="engineering-icon icon-airplane" src="assets/icons/aeroplane.svg" alt="" />
+      <img class="engineering-icon icon-design" src="assets/icons/design-thinking.svg" alt="" />
+      <img class="engineering-icon icon-engineering" src="assets/icons/engineering.svg" alt="" />
+      <img class="engineering-icon icon-robot" src="assets/icons/industrial-robot.svg" alt="" />
+      <img class="engineering-icon icon-laser" src="assets/icons/laser.svg" alt="" />
+      <img class="engineering-icon icon-machinery" src="assets/icons/machinery.svg" alt="" />
+      <img class="engineering-icon icon-milling" src="assets/icons/milling-machine.svg" alt="" />
+      <img class="engineering-icon icon-rocket" src="assets/icons/rocket.svg" alt="" />
+      <img class="engineering-icon icon-turbine" src="assets/icons/turbine.svg" alt="" />
+      <img class="engineering-icon icon-wind" src="assets/icons/wind-power.svg" alt="" />
+      <img class="engineering-icon icon-wrench" src="assets/icons/wrench.svg" alt="" />
+    </div>
+    <nav class="orbit-nav" aria-label="Portfolio sections">
+      <div class="orbit-links" id="orbit-links">
+        <a class="orbit-link" href="index.html" aria-label="Home" style="--nav-x:0px;--nav-y:0px"><img src="assets/nav-icons/home.png" alt="" /><span>Home</span></a>
+        <div class="orbit-about-group">
+          <a class="orbit-link orbit-about" href="about.html" aria-label="About me"><img src="assets/nav-icons/about-me.png" alt="" /><span>About me</span></a>
+          <a class="journey-sub-link" href="journey.html"><img src="assets/nav-icons/journey.png" alt="" /><span>My Journey</span></a>
+        </div>
+        <a class="orbit-link" href="projects.html" aria-label="Projects" style="--nav-x:113px;--nav-y:65px"><img src="assets/nav-icons/project.png" alt="" /><span>Projects</span></a>
+        <a class="orbit-link" href="certification.html" aria-label="Certification" style="--nav-x:65px;--nav-y:113px"><img src="assets/nav-icons/certificate.png" alt="" /><span>Certification</span></a>
+        <a class="orbit-link" href="achievements.html" aria-label="Achievements" style="--nav-x:0px;--nav-y:130px"><img src="assets/nav-icons/achievements.png" alt="" /><span>Achievements</span></a>
+      </div>
+    </nav>
+    <main id="main" class="certification-page">
+      <section class="certification-gallery achievement-gallery" id="top" aria-labelledby="achievements-title">
+        <div class="certification-heading">
+          <div class="section-kicker"><span>05</span><span>COMPETITION MILESTONES</span></div>
+          <h1 id="achievements-title">Achievements</h1>
+          <p>Built with a team, tested in the field, earned together.</p>
+        </div>
+        <div class="cert-carousel" data-achievement-carousel>
+          <button class="cert-carousel-arrow" type="button" aria-label="Previous achievement" data-achievement-previous>←</button>
+          <div class="cert-track achievement-track" data-achievement-track tabindex="0" aria-label="Achievements. Scroll horizontally to explore."></div>
+          <button class="cert-carousel-arrow" type="button" aria-label="Next achievement" data-achievement-next>→</button>
+        </div>
+        <p class="cert-carousel-hint" data-achievement-status>Loading achievements…</p>
+      </section>
+
+      <section class="research-recognition" id="research-recognition" aria-labelledby="research-recognition-title">
+        <div class="research-recognition-heading">
+          <div class="section-kicker"><span>06</span><span>WORK THAT GOES FURTHER</span></div>
+          <h2 id="research-recognition-title">Research &amp; Recognition</h2>
+          <p>Ideas tested in research, recognized in competition.</p>
+        </div>
+        <div class="research-recognition-grid">
+          <article class="research-spotlight">
+            <span class="research-card-index">01 / RESEARCH</span>
+            <p class="research-card-kicker">PUBLISHED RESEARCH · UAV STRUCTURES</p>
+            <div class="research-photo-pair">
+              <a class="research-photo-link" data-research-photo="Research 1.1.png" data-research-title="UAV landing-strut research paper" data-research-caption="Paper excerpt: Optimization of Inclined Landing Strut Angle in UAV." aria-label="View the landing strut research paper image">
+                <img alt="Excerpt from research on the optimization of an inclined UAV landing-strut angle" />
+                <span>RESEARCH PAPER</span>
+              </a>
+              <a class="research-photo-link" data-research-photo="Research 1.2.png" data-research-title="Research presentation certificate" data-research-caption="Certificate for presenting research at the 2024 International Conference on Manufacturing, Materials Science and Engineering." aria-label="View the research presentation certificate image">
+                <img alt="Certificate for presenting research at the 2024 International Conference on Manufacturing, Materials Science and Engineering" />
+                <span>CONFERENCE PRESENTATION</span>
+              </a>
+            </div>
+            <h3>Innovations in Electronic Materials</h3>
+            <dl class="research-publication-details">
+              <div><dt>Book</dt><dd>Innovations in Electronic Materials: Advancing Technology for a Sustainable Future.</dd></div>
+              <div><dt>Chapter Title</dt><dd>Optımization of Inclined Landing Strut Angle in UAV.</dd></div>
+              <div><dt>DOI</dt><dd><a href="https://doi.org/10.1007/978-3-031-73816-6" target="_blank" rel="noreferrer">10.1007/978-3-031-73816-6 ↗</a></dd></div>
+            </dl>
+          </article>
+          <article class="recognition-panel">
+            <span class="research-card-index">02 / RECOGNITION</span>
+            <p class="research-card-kicker">NATIONAL COMPETITION RESULTS</p>
+            <a class="recognition-photo-link" data-research-photo="recognition 1.0.png" data-research-title="SAEINDIA Aerothon 2024 recognition" data-research-caption="KLE Technological University earned second runner-up at SAEINDIA Aerothon 2024. The team developed a PID controller and fine-tuned drone motor values with MATLAB and Simulink for stable roll, pitch, and yaw control." aria-label="View the SAEINDIA Aerothon 2024 recognition image">
+              <img alt="KLE Technological University aeroKLE team recognized as second runner-up at SAEINDIA Aerothon 2024" />
+            </a>
+            <p class="recognition-photo-caption">SAEINDIA Aerothon 2024 · KLE Technological University</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="cert-viewer research-image-viewer" data-research-viewer aria-label="Research and recognition image viewer">
+      <header class="cert-viewer-header">
+        <div><span class="cert-viewer-count">RESEARCH &amp; RECOGNITION</span><h2 data-research-viewer-title>Photo</h2></div>
+        <button class="cert-viewer-close" type="button" aria-label="Close photo">×</button>
+      </header>
+      <div class="research-image-viewer-stage">
+        <img data-research-viewer-image alt="" />
+        <p data-research-viewer-caption></p>
+      </div>
+    </dialog>
+
+    <dialog class="cert-viewer achievement-viewer" data-achievement-viewer aria-label="Achievement viewer">
+      <header class="cert-viewer-header">
+        <div><span class="cert-viewer-count" data-achievement-viewer-count></span><h2 data-achievement-viewer-title>Achievement</h2></div>
+        <button class="cert-viewer-close" type="button" aria-label="Close achievement">×</button>
+      </header>
+      <div class="achievement-viewer-main">
+        <button class="cert-viewer-arrow cert-viewer-previous" type="button" aria-label="Previous achievement" data-achievement-viewer-previous>←</button>
+        <img class="achievement-viewer-image" data-achievement-viewer-image alt="" />
+        <div class="achievement-viewer-story">
+          <span class="achievement-award" data-achievement-viewer-award></span>
+          <p class="achievement-viewer-copy" data-achievement-viewer-copy></p>
+        </div>
+        <button class="cert-viewer-arrow cert-viewer-next" type="button" aria-label="Next achievement" data-achievement-viewer-next>→</button>
+      </div>
+    </dialog>
+
+    <footer class="site-footer"><span>© 2026 NISHAD</span><span>DESIGNED WITH CURIOSITY <span class="footer-star">✳</span></span><a href="#top">BACK TO TOP ↑</a></footer>
+  </body>
+</html>
+
+

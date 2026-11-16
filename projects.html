@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080c10" />
+    <meta name="description" content="Selected mechanical, aerospace, simulation, and automation projects by Nishad Hooli." />
+    <meta property="og:title" content="Projects | NISHAD'S PORTFOLIO" />
+    <meta property="og:description" content="Engineering concepts developed through design, simulation, and testing." />
+    <title>Projects | NISHAD'S PORTFOLIO</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="projects.js" defer></script>
+  </head>
+  <body class="projects-page">
+    <div class="site-loader" role="status" aria-label="Loading portfolio">
+      <div class="site-loader-mark"><span aria-hidden="true"></span><img src="assets/brand-mark.svg" alt="" /></div>
+      <span class="site-loader-label">NISHAD'S PORTFOLIO</span>
+    </div>    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="starfield" aria-hidden="true"></div>
+    <div class="background-icons" aria-hidden="true">
+      <img class="engineering-icon icon-airplane" src="assets/icons/aeroplane.svg" alt="" />
+      <img class="engineering-icon icon-design" src="assets/icons/design-thinking.svg" alt="" />
+      <img class="engineering-icon icon-engineering" src="assets/icons/engineering.svg" alt="" />
+      <img class="engineering-icon icon-robot" src="assets/icons/industrial-robot.svg" alt="" />
+      <img class="engineering-icon icon-laser" src="assets/icons/laser.svg" alt="" />
+      <img class="engineering-icon icon-machinery" src="assets/icons/machinery.svg" alt="" />
+      <img class="engineering-icon icon-milling" src="assets/icons/milling-machine.svg" alt="" />
+      <img class="engineering-icon icon-rocket" src="assets/icons/rocket.svg" alt="" />
+      <img class="engineering-icon icon-turbine" src="assets/icons/turbine.svg" alt="" />
+      <img class="engineering-icon icon-wind" src="assets/icons/wind-power.svg" alt="" />
+      <img class="engineering-icon icon-wrench" src="assets/icons/wrench.svg" alt="" />
+    </div>
+    <nav class="orbit-nav" aria-label="Portfolio sections">
+      <div class="orbit-links" id="orbit-links">
+        <a class="orbit-link" href="index.html" aria-label="Home" style="--nav-x:0px;--nav-y:0px"><img src="assets/nav-icons/home.png" alt="" /><span>Home</span></a>
+        <div class="orbit-about-group">
+          <a class="orbit-link orbit-about" href="about.html" aria-label="About me"><img src="assets/nav-icons/about-me.png" alt="" /><span>About me</span></a>
+          <a class="journey-sub-link" href="journey.html"><img src="assets/nav-icons/journey.png" alt="" /><span>My Journey</span></a>
+        </div>
+        <a class="orbit-link" href="projects.html" aria-label="Projects" style="--nav-x:113px;--nav-y:65px"><img src="assets/nav-icons/project.png" alt="" /><span>Projects</span></a>
+        <a class="orbit-link" href="certification.html" aria-label="Certification" style="--nav-x:65px;--nav-y:113px"><img src="assets/nav-icons/certificate.png" alt="" /><span>Certification</span></a>
+        <a class="orbit-link" href="achievements.html" aria-label="Achievements" style="--nav-x:0px;--nav-y:130px"><img src="assets/nav-icons/achievements.png" alt="" /><span>Achievements</span></a>
+      </div>
+    </nav>
+
+    <main id="main" class="projects-main">
+      <header class="projects-intro" id="top">
+        <div class="section-kicker"><span>03</span><span>SELECTED WORK</span></div>
+        <div class="projects-heading-row">
+          <div>
+            <h1>Projects<span>.</span></h1>
+            <p>From simulation to the shop floor, each project is a chance to make an engineering idea work in the real world.</p>
+          </div>
+          <div class="projects-count" aria-label="Project count"><strong id="project-count">16</strong><span>PROJECTS<br />IN THE PORTFOLIO</span></div>
+        </div>
+      </header>
+
+      <section class="projects-featured" aria-labelledby="featured-projects-title">
+        <div class="featured-heading">
+          <div>
+            <div class="section-kicker"><span>ISRO–LEOS</span><span>FEATURED INTERNSHIP WORK</span></div>
+            <h2 id="featured-projects-title">Built for the conditions of space<span>.</span></h2>
+            <p>Two LEOS projects focused on earning confidence through structural analysis, precision design, and physical validation.</p>
+          </div>
+          <span class="featured-pin"><span aria-hidden="true">⌖</span> PINNED</span>
+        </div>
+        <div class="project-featured-grid" id="project-featured-grid"></div>
+      </section>
+
+      <section class="projects-work" aria-labelledby="academic-projects-title">
+        <div class="project-section-heading">
+          <div class="section-kicker"><span>01</span><span>ACADEMIC &amp; PERSONAL WORK</span></div>
+          <h2 id="academic-projects-title">Projects in the workshop<span>.</span></h2>
+        </div>
+        <div class="project-filter-row">
+          <p class="project-filter-label">FILTER BY DISCIPLINE</p>
+          <div class="project-filters" role="group" aria-label="Filter projects">
+            <button type="button" class="project-filter is-active" data-filter="all" aria-pressed="true">Academic work <span>07</span></button>
+            <button type="button" class="project-filter" data-filter="aerospace" aria-pressed="false">Aerospace <span>01</span></button>
+            <button type="button" class="project-filter" data-filter="simulation" aria-pressed="false">Simulation <span>01</span></button>
+            <button type="button" class="project-filter" data-filter="automation" aria-pressed="false">Automation <span>03</span></button>
+            <button type="button" class="project-filter" data-filter="design" aria-pressed="false">Design &amp; making <span>02</span></button>
+          </div>
+        </div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        <p class="projects-footnote"><span class="footnote-spark">✳</span> Select a project to explore its process, tools, and takeaways.</p>
+      </section>
+
+      <section class="projects-cocurricular" aria-labelledby="cocurricular-title">
+        <div class="cocurricular-heading">
+          <div>
+            <div class="section-kicker"><span>02</span><span>COMPETITIONS &amp; TEAM PROJECTS</span></div>
+            <h2 id="cocurricular-title">Co-curricular projects<span>.</span></h2>
+            <p>Aircraft and UAV builds shaped through team design, hands-on fabrication, analysis, and competition.</p>
+          </div>
+          <span class="cocurricular-count"><strong>07</strong><span>TEAM &amp; DESIGN<br />PROJECTS</span></span>
+        </div>
+        <div class="project-grid cocurricular-grid" id="cocurricular-grid"></div>
+      </section>
+    </main>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="detail-title">
+      <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+      <div class="dialog-image-column">
+        <div class="dialog-image-frame"><img id="detail-image" src="" alt="" /></div>
+        <div class="dialog-gallery-controls"><button type="button" id="gallery-prev" aria-label="Previous project image">←</button><span id="gallery-count">01 / 01</span><button type="button" id="gallery-next" aria-label="Next project image">→</button></div>
+        <div class="dialog-thumbnails" id="dialog-thumbnails" aria-label="Project images"></div>
+      </div>
+      <article class="dialog-copy">
+        <p class="dialog-kicker"><span id="detail-number">01</span><span id="detail-category">PROJECT</span></p>
+        <h2 id="detail-title"></h2>
+        <p class="detail-tagline" id="detail-tagline"></p>
+        <div class="detail-full-content" id="detail-full-content" hidden></div>
+        <p class="detail-overview" id="detail-overview"></p>
+        <div class="detail-section"><h3>What I built</h3><p id="detail-build"></p></div>
+        <div class="detail-section"><h3>Tools &amp; methods</h3><div class="detail-tags" id="detail-tools"></div></div>
+        <div class="detail-section"><h3>What I learned</h3><p id="detail-learning"></p></div>
+      </article>
+    </dialog>
+
+    <footer class="site-footer"><span>© 2026 NISHAD</span><span>DESIGNED WITH CURIOSITY <span class="footer-star">✳</span></span><a href="#top">BACK TO TOP ↑</a></footer>
+  </body>
+</html>
+
+

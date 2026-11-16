@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080c10" />
+    <meta name="description" content="Nishad’s aerospace and mechanical engineering journey." />
+    <meta property="og:title" content="NISHAD'S PORTFOLIO" />
+    <meta property="og:description" content="A scroll through Nishad’s aerospace journey." />
+    <title>NISHAD'S PORTFOLIO</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="journey.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="starfield" aria-hidden="true"></div>
+    <div class="background-icons" aria-hidden="true">
+      <img class="engineering-icon icon-airplane" src="assets/icons/aeroplane.svg" alt="" />
+      <img class="engineering-icon icon-design" src="assets/icons/design-thinking.svg" alt="" />
+      <img class="engineering-icon icon-engineering" src="assets/icons/engineering.svg" alt="" />
+      <img class="engineering-icon icon-robot" src="assets/icons/industrial-robot.svg" alt="" />
+      <img class="engineering-icon icon-laser" src="assets/icons/laser.svg" alt="" />
+      <img class="engineering-icon icon-machinery" src="assets/icons/machinery.svg" alt="" />
+      <img class="engineering-icon icon-milling" src="assets/icons/milling-machine.svg" alt="" />
+      <img class="engineering-icon icon-rocket" src="assets/icons/rocket.svg" alt="" />
+      <img class="engineering-icon icon-turbine" src="assets/icons/turbine.svg" alt="" />
+      <img class="engineering-icon icon-wind" src="assets/icons/wind-power.svg" alt="" />
+      <img class="engineering-icon icon-wrench" src="assets/icons/wrench.svg" alt="" />
+    </div>
+    <nav class="orbit-nav" aria-label="Portfolio sections">
+      <div class="orbit-links" id="orbit-links">
+        <a class="orbit-link" href="index.html" aria-label="Home" style="--nav-x:0px;--nav-y:0px"><img src="assets/nav-icons/home.png" alt="" /><span>Home</span></a>
+        <div class="orbit-about-group">
+          <a class="orbit-link orbit-about" href="about.html" aria-label="About me"><img src="assets/nav-icons/about-me.png" alt="" /><span>About me</span></a>
+          <a class="journey-sub-link is-active" href="journey.html" aria-label="My Journey" aria-current="page"><img src="assets/nav-icons/journey.png" alt="" /><span>My Journey</span></a>
+        </div>
+        <a class="orbit-link" href="projects.html" aria-label="Projects" style="--nav-x:113px;--nav-y:65px"><img src="assets/nav-icons/project.png" alt="" /><span>Projects</span></a>
+        <a class="orbit-link" href="certification.html" aria-label="Certification" style="--nav-x:65px;--nav-y:113px"><img src="assets/nav-icons/certificate.png" alt="" /><span>Certification</span></a>
+        <a class="orbit-link" href="achievements.html" aria-label="Achievements" style="--nav-x:0px;--nav-y:130px"><img src="assets/nav-icons/achievements.png" alt="" /><span>Achievements</span></a>
+      </div>
+    </nav>
+
+    <main id="main" class="portfolio-journey-page">
+      <div class="journey-loader" role="status" aria-live="polite">
+        <div class="journey-loader-content">
+          <span class="journey-loader-spinner" aria-hidden="true"><img src="assets/brand-mark.svg" alt="" /></span>
+          <p>PREPARING THE JOURNEY</p>
+          <span class="journey-loader-track"><i id="journey-loader-progress"></i></span>
+          <span id="journey-loader-percent">0%</span>
+        </div>
+      </div>
+
+      <section class="journey-scrolly" id="top" aria-label="Scroll through Nishad’s aerospace journey">
+        <div class="journey-sticky">
+          <canvas class="journey-canvas" aria-label="Animated transition from drone to satellite to regional aircraft"></canvas>
+          <div class="journey-stage-shade" aria-hidden="true"></div>
+          <article class="journey-story journey-story-intro" data-from="0" data-to="0.13">
+            <p class="journey-kicker">AEROSPACE · MECHANICAL · MAKING</p>
+            <h1>This is how<br />I got here.</h1>
+            <p class="journey-scroll-hint">Scroll to move through the transformation</p>
+          </article>
+          <article class="journey-story journey-story-aero" data-from="0.2" data-to="0.55">
+            <p class="journey-kicker">CHAPTER 01 · MAR 2024 TO JAN 2025</p>
+            <h2>AeroKLE · Hubli</h2>
+            <p class="journey-story-role">Mechanical subsystem team lead</p>
+            <p>Joined as an intern, went on to lead the mechanical subsystem team. Worked on micro drones under 2kg and fixed-wing aircraft up to a 2.5m wingspan, representing the university nationally with multiple All India ranks as team lead.</p>
+          </article>
+          <article class="journey-story journey-story-isro" data-from="0.5" data-to="0.88">
+            <p class="journey-kicker">CHAPTER 02 · FEB 2025 TO MAY 2025</p>
+            <h2>ISRO</h2>
+            <p class="journey-story-role">Project Intern · Satellite systems</p>
+            <p>Project intern on real-scale satellite work: design, manufacturing, assembly and testing, contributing to prestigious programs including Gaganyaan and NISAR.</p>
+          </article>
+          <article class="journey-story journey-story-avascent" data-from="0.83" data-to="1">
+            <p class="journey-kicker">CHAPTER 03 · MAR 2026 TO PRESENT</p>
+            <h2>Avascent Aero</h2>
+            <p class="journey-story-role">Structural Repair Engineer (Design)</p>
+            <p>Structural analysis and support for Bombardier CRJ aircraft, applying engineering judgment to ensure structural integrity, performance and compliance, bridging a mechanical engineering background into high-reliability aerospace systems.</p>
+            <a href="#contact" class="journey-contact-button">Get in touch <span aria-hidden="true">↗</span></a>
+          </article>
+          <div class="journey-hud" aria-hidden="true"><span id="journey-frame-count">001 <i>/</i> 160</span><span>DRONE <i>→</i> SATELLITE <i>→</i> REGIONAL JET</span></div>
+          <div class="journey-progress-track" aria-hidden="true"><span id="journey-progress"></span></div>
+        </div>
+      </section>
+
+      <section class="journey-contact-section" id="contact">
+        <p class="journey-kicker">THE NEXT CHAPTER</p>
+        <h2>Let’s build what comes next.</h2>
+        <p>Add your preferred email or professional profile here.</p>
+        <a href="about.html">Back to the portfolio <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>© 2026 NISHAD</span><span>DESIGNED WITH CURIOSITY <span class="footer-star">✳</span></span><a href="#top">BACK TO TOP ↑</a></footer>
+  </body>
+</html>
+
+
