@@ -17,7 +17,7 @@ function PortfolioNav() {
           <Link className="nav-orbit-link nav-about" href="/about.html" aria-label="About me">
             <img src="/assets/nav-icons/about-me.png" alt="" /><span>About me</span>
           </Link>
-          <Link className="nav-journey-link" href="/journey" aria-current="page">
+          <Link className="nav-orbit-link nav-journey-link" href="/journey" aria-current="page">
             <img src="/assets/nav-icons/journey.png" alt="" /><span>My Journey</span>
           </Link>
         </div>

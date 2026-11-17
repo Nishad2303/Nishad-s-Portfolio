@@ -25,6 +25,7 @@ export default function JourneyScrollCanvas() {
   const loadFrameRef = useRef<((index: number) => Promise<CanvasFrame | null>) | null>(null);
   const drawLatestRef = useRef<((value: number) => void) | null>(null);
   const activeIndexRef = useRef(0);
+  const playbackDirectionRef = useRef<1 | -1>(1);
   const currentFrameRef = useRef(1);
   const introRef = useRef<HTMLElement>(null);
   const aeroReducedRef = useRef<HTMLElement>(null);
@@ -88,7 +89,10 @@ export default function JourneyScrollCanvas() {
             if (!disposed) setProgress(Math.round((finishedInitial / INITIAL_BUFFER) * 100));
           }
           const active = activeIndexRef.current;
-          if (loadedImage && !disposed && index >= active - 2 && index <= active + lookAhead) {
+          const direction = playbackDirectionRef.current;
+          const minimumCachedIndex = active - (direction > 0 ? 2 : lookAhead);
+          const maximumCachedIndex = active + (direction > 0 ? lookAhead : 2);
+          if (loadedImage && !disposed && index >= minimumCachedIndex && index <= maximumCachedIndex) {
             frameCacheRef.current.set(index, loadedImage);
             if (Math.abs(index - active) <= 1) drawLatestRef.current?.(easedProgress.get());
           }
@@ -182,12 +186,24 @@ export default function JourneyScrollCanvas() {
     const scheduleDraw = (value: number) => {
       latestProgress = value;
       const target = reducedMotion ? FRAME_COUNT - 1 : Math.max(0, Math.min(FRAME_COUNT - 1, Math.round(value * (FRAME_COUNT - 1))));
+      const previousTarget = activeIndexRef.current;
+      if (target !== previousTarget) playbackDirectionRef.current = target > previousTarget ? 1 : -1;
+      const direction = playbackDirectionRef.current;
       activeIndexRef.current = target;
       void loadFrameRef.current?.(target);
       if (!reducedMotion) {
-        for (let offset = -2; offset <= lookAhead; offset += 1) void loadFrameRef.current?.(target + offset);
+        // Keep frames ready in the direction the visitor is scrolling. At the
+        // end of the sequence, reverse scrolling needs frames behind the playhead.
+        for (let distance = 1; distance <= lookAhead; distance += 1) {
+          void loadFrameRef.current?.(target + direction * distance);
+        }
+        for (let distance = 1; distance <= 2; distance += 1) {
+          void loadFrameRef.current?.(target - direction * distance);
+        }
         frameCacheRef.current.forEach((_, index) => {
-          if (index < target - 2 || index > target + lookAhead) {
+          const minimumCachedIndex = direction > 0 ? target - 2 : target - lookAhead;
+          const maximumCachedIndex = direction > 0 ? target + lookAhead : target + 2;
+          if (index < minimumCachedIndex || index > maximumCachedIndex) {
             frameCacheRef.current.delete(index);
           }
         });

@@ -37,12 +37,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid #d95353; outline-offs
 .nav-about-group { position: absolute; top: 0; left: 130px; pointer-events: auto; }
 .nav-about { position: relative; top: auto; left: auto; }
 .nav-about[aria-current="page"] { background: var(--signal); }
-.nav-journey-link { position: absolute; top: -38px; left: 48px; display: inline-flex; min-height: 34px; align-items: center; gap: 7px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; background: rgb(0 0 0 / 92%); color: var(--white-90); font: 500 10px/14px 'Geist Mono', monospace; white-space: nowrap; opacity: 0; visibility: hidden; transform: translateX(-5px); transition: opacity 250ms var(--curve), transform 500ms var(--curve), visibility 250ms; pointer-events: none; }
-.nav-journey-link img { width: 18px; height: 18px; object-fit: contain; }
-.nav-journey-link[aria-current="page"] { border-color: rgb(190 25 25 / 75%); color: #ffc6c6; }
-.nav-about-group:hover .nav-journey-link, .nav-about-group:focus-within .nav-journey-link { opacity: 1; visibility: visible; transform: translateX(0); pointer-events: auto; }
-.nav-projects { top: 65px; left: 113px; }
-.nav-certification { top: 113px; left: 65px; }
+.nav-journey-link { top: 50px; left: -10px; }
+.nav-projects { top: 92px; left: 92px; }
+.nav-certification { top: 120px; left: 50px; }
 .nav-achievements { top: 130px; left: 0; }
 
 .journey-scroll-section { position: relative; height: 400vh; background: var(--studio); }
